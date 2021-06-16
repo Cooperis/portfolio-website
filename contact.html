@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -14,7 +14,7 @@
 
 <body>
     <header class="page-header">        
-        <img src="img/Tomas Kuprys Corner Logo.png" width="200" height="70" alt="Tomas Kuprys Logo" class="page-header__item">
+        <img src="img/Tomas_Kuprys_Corner_Logo.png" width="200" height="70" alt="Tomas Kuprys Logo" class="page-header__item">
         <nav class="main-navigation page-header__item">
             <ul role="menubar" class="navigation-list">
                 <li role="presentation">
@@ -32,7 +32,7 @@
             </ul>
         </nav>
     </header>  
-    <main>
+    <main class="contact-details">
       <h1>Contact</h1>
       <div>
         Tomas Kuprys<br>
@@ -46,20 +46,27 @@
         <a href="mailto:tomas@careerfoundry.com">Contact me</a>
       </div>
       <div>
-        <form action="" method="POST" id="contact-form">
+        <form action="send" method="POST" id="contact-form">
+            <br>
             <label class="standard-label" for="contact-email">Email:</label>
             <input type="email" id="contact-email" required>
+            <br>
+            <br>
 
             <label class="standard-label" for="contact-tel">Telephone:</label>
             <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="contact-tel">
+            <br>
+            <br>
 
             <label class="standard-label" for="contact-message">Message:</label>
             <textarea maxlength="240" id="contact-message" required></textarea>
+            <br>
+            <br>
             
             <input type="submit" value="Send message">
         </form>
       </div>
-    <main>
+    </main>
     <footer class="page-footer">
         <p>Find me on</p>
         <div class="social-media">
